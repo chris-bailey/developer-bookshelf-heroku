@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Book.
+    -->
+    <changeSet id="20150410175232" author="cbailey">
+       <!-- Create and populate Book Entity tables -->
+        <createTable tableName="T_BOOK">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="version" type="integer"/>
+            <column name="name" type="varchar(100)">
+                <constraints nullable="false" />
+            </column>
+            <column name="publisher" type="varchar(100)">
+                <constraints nullable="false" />
+            </column>
+            <column name="date_of_publication" type="timestamp"/>
+            <column name="description" type="varchar(2000)"/>
+            <column name="photo" type="varchar"/>
+        </createTable>
+        <dropDefaultValue tableName="T_BOOK" columnName="date_of_publication" columnDataType="datetime"/>
+
+		<!-- Populate Books -->
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/books.csv"
+                  separator="~"
+                  tableName="T_BOOK"/>
+                    
+    </changeSet>
+</databaseChangeLog>
