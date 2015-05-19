@@ -60,8 +60,9 @@ public class BookServiceTest {
 
 	@Test
 	public void testDelete() {
-		bookService.delete(testBook);
-		assertThat(bookService.findAll()).hasSize(totalBooks);
+		Book book = bookService.findById(1L);
+		bookService.delete(book);
+		assertThat(bookService.findAll()).hasSize(totalBooks - 1);
 	}
 
 	@Test
