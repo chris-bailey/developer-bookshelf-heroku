@@ -17,8 +17,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -115,31 +113,6 @@ public class BookControllerTest {
                         hasProperty("publisher", equalTo(null))
 					)
 			));;
-	}
-	
-//	@Test
-	public void testCreate() throws Exception {
-		// CJB -> Create a test in here at some point.
-		
-		/*MockHttpServletRequestBuilder createMessage = post("/create")
-				.contentType(MediaType.MULTIPART_FORM_DATA)
-				.param("summary", "Spring Rocks")
-				.param("text", "In case you didn't know, Spring Rocks!");
-
-			mockMvc.perform(createMessage)
-				.andExpect(status().is3xxRedirection())
-				.andExpect(redirectedUrl("/messages/123"));*/
-		
-		/*this.mockMvc.perform(post("/create")
-			
-			.param("description", "A recipe used during testing"))
-			
-		 	.andExpect(redirectedUrl("/cookbook/"));
-		 
-		MvcResult result = this.mockMvc.perform(get("/cookbook/"))
-            .andExpect(status().isOk())
-            .andExpect(model().attributeExists("recipes"))
-            .andReturn();*/
 	}
 	
 	@Test
