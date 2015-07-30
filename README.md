@@ -1,4 +1,4 @@
-##Spring Boot + Thymeleaf + Heroku + Liquibase##
+##Spring Boot + Thymeleaf + Heroku##
 This demo application has been created as an example utilization of the [Spring Boot + Thymeleaf + Heroku Template](https://github.com/chris-bailey/spring-boot-thymeleaf-heroku-template) project. Detailed steps documenting the creation of this application can be found in [The Developer’s Bookshelf with Heroku](http://chrisbaileydeveloper.com/projects/the-developers-bookshelf-with-heroku/) web page on my website.
 
 ###Technology Stack###
