@@ -11,7 +11,7 @@ This demo application has been created as an example utilization of the [Spring 
 1. Java 8, Spring Security 3.2, Maven 3, SLF4J, Logback, Bootstrap 3.3.4, jQuery 1.11.2, i18n
 
 ###Live Demo###
-Be aware that this application is currently running on a free Heroku account.  If it hasn't been accessed in 30 minutes, then ***the first request will take up to 60 seconds***.  Please be patient with the first request. Subsequent requests will be normal.  
+Be aware that this application is currently running on a free Heroku account.  If it hasn't been accessed in 30 minutes, then ***the first request will take up to 60 seconds***.  Note that the demo application is running on a free account and it might fail to load altogether if the Heroku servers are busy. 
 
 Here is the [Developer's Bookshelf](https://developer-bookshelf-heroku.herokuapp.com/) running on Heroku.
 
