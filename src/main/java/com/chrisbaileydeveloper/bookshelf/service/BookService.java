@@ -16,7 +16,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.chrisbaileydeveloper.bookshelf.controller.BookController;
 import com.chrisbaileydeveloper.bookshelf.domain.Book;
 import com.chrisbaileydeveloper.bookshelf.repository.BookRepository;
 import com.google.common.collect.Lists;
@@ -24,7 +23,7 @@ import com.google.common.collect.Lists;
 @Service
 @Transactional
 public class BookService {
-	final Logger logger = LoggerFactory.getLogger(BookController.class);
+	final Logger logger = LoggerFactory.getLogger(BookService.class);
 
 	@Inject
 	private BookRepository bookRepository;
