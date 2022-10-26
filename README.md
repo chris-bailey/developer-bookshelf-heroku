@@ -1,7 +1,7 @@
-##Spring Boot + Thymeleaf + Heroku##
-This demo application has been created as an example utilization of the [Spring Boot + Thymeleaf + Heroku Template](https://github.com/chris-bailey/spring-boot-thymeleaf-heroku-template) project. Detailed steps documenting the creation of this application can be found in [The Developer’s Bookshelf with Heroku](http://chrisbaileydeveloper.com/projects/the-developers-bookshelf-with-heroku/) web page on my website.
+## Spring Boot + Thymeleaf + Heroku
+This demo application has been created as an example utilization of the [Spring Boot + Thymeleaf + Heroku Template](https://github.com/chris-bailey/spring-boot-thymeleaf-heroku-template) project. 
 
-###Technology Stack###
+### Technology Stack 
 1. Spring Boot, no-xml Spring MVC 4 web application for Servlet 3.0 environment
 1. Thymeleaf templates with added Joda Time & Spring Security Dialects  
 1. Heroku fully cloud deployable
@@ -10,12 +10,11 @@ This demo application has been created as an example utilization of the [Spring 
 1. Testing (JUnit/Mockito/MockMVC/AssertJ/Hamcrest)  
 1. Java 8, Spring Security 3.2, Maven 3, SLF4J, Logback, Bootstrap 3.3.4, jQuery 1.11.2, i18n
 
-###Live Demo###
+### Live Demo 
 Be aware that this application is currently running on a free Heroku account.  If it hasn't been accessed in 30 minutes, then ***the first request will take up to 120 seconds***.  Note that the demo application might fail to load altogether if the Heroku servers are busy. 
+ 
 
-Here is the [Developer's Bookshelf](https://developer-bookshelf-heroku.herokuapp.com/) running on Heroku.
-
-###Local Deployment###
+### Local Deployment 
 ```
 $ mvn clean install  
 $ mvn spring-boot:run
@@ -25,7 +24,7 @@ Navigate to [http://localhost:8080](http://localhost:8080).
  
 The application can also be deployed by running the `Application.java` class.
 
-###Deploying to Heroku###
+### Deploying to Heroku
 <i>The following steps require that the [Heroku Toolbelt](https://toolbelt.heroku.com/) has been installed locally and that a Heroku account has been created.</i>
 
 Navigate to the project directory on the command line.
@@ -67,11 +66,11 @@ If your application deploys without timing out then open it as follows
 $ heroku open
 ```
 
-###Special Thanks###
+### Special Thanks 
 A big thank you to [Julien Dubois](http://www.julien-dubois.com/) and the [JHipster](https://jhipster.github.io/) project for leading the way in the rapid development of Spring applications, as well as for part of the foundation for this template.  JHipster is a Yeoman generator used to create Spring + AngularJS projects, with full hot reload of Java and JavaScript code.
 
 Also, thank you to Rafal Borowiec's for his impressive [spring-mvc-quickstart-archetype](https://github.com/kolorobot/spring-mvc-quickstart-archetype) project.
 
 
-### Author ###
-[Chris Bailey](http://www.chrisbaileydeveloper.com)
+### Author 
+ Chris Bailey 
